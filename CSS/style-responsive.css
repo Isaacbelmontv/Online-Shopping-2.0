@@ -1,0 +1,108 @@
+@media screen and (max-width : 600px) {
+  /*primer menu*/
+
+  /*segundo menu*/
+    #menu {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        left: -100%;
+        position: fixed;
+        z-index: 3;
+    }
+
+    #menu  #menu-uc li{
+      display: block;
+      float: none;
+      border-bottom: 1px solid #17202A;
+    }
+
+    .menu-bar{
+      display: block;
+      width: 100%;
+      background-color:#FFFFFF;
+    }
+
+    .menu-bar .bt-menu{
+      display: block;
+      padding: 20px;
+      background-color: #34495E;
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: bold;
+      -webkit-box-sizing:border-box;
+      -moz-box-sizing:border-box;
+      box-sizing:border-box;
+    }
+
+    .menu-bar i{
+      font-size: 30px;
+    }
+/*slide reponsive*/
+img{
+  width:100%;
+  max-width:340px;
+  max-height: 300px;
+}
+
+.img1 .img2 .img3 .img4 {
+  width: 100%;
+  max-width:340px;
+  max-height: 300px;
+}
+
+.slide{
+  width: 100%;
+  max-width:340px;
+  max-height: 300px;
+}
+
+/*footer responsive*/
+
+.pie1{
+  width: 94.5%;
+  height: 80%;
+  padding: 10px;
+}
+
+.servicio{
+  text-align: center;
+  width: 100%;
+}
+
+.servicio p{
+  text-align: center;
+  width: 100%;
+}
+/*acaba footer*/
+/*login*/
+.login-body{
+align: center;
+margin-left: 5%;
+margin: 10%;
+}
+/*mision*/
+.mision{
+height: 100%;
+width: 100%;
+margin: auto;
+margin-top: 10px;
+}
+
+.contacto{
+width: 80%;
+}
+
+.responsive-form{
+width: 100px;
+height: 200px;
+}
+
+.mapa-responsive {
+  width: 100%;
+  max-width:340px;
+  max-height: 300px;
+}
+
+}
