@@ -1,0 +1,553 @@
+/*Variables de colores */
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  background-color: #D6DBDF; }
+
+/*Nav responsive */
+header nav .menu-bar {
+  display: none; }
+header nav .menu-bar a {
+  display: none; }
+
+/*Nav Login */
+header {
+  width: 100%; }
+  header .nav {
+    width: 100%;
+    height: 40px;
+    background-color: #17202A; }
+    header .nav ul {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-start; }
+      header .nav ul li {
+        margin-top: 10px;
+        list-style: none; }
+        header .nav ul li a {
+          font-family: Arial;
+          font-size: 14px;
+          margin-right: 30px;
+          color: #e1fb06;
+          text-decoration: none;
+          padding: 12px; }
+        header .nav ul li a:hover {
+          transition: 0.3s;
+          color: white; }
+
+/*Nav Menu */
+header #menu {
+  width: 100%;
+  height: 58px;
+  background-color: #34495E;
+  position: relative; }
+  header #menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row; }
+    header #menu ul li {
+      font-family: Arial;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 20px; }
+      header #menu ul li a {
+        text-decoration: none;
+        color: #FFFFFF;
+        padding: 20px; }
+        header #menu ul li a i {
+          padding-right: 5px; }
+
+#menu ul li a:hover {
+  color: #AEB6BF;
+  background-color: #17202A;
+  transition: 0.3s; }
+
+/*Inicio de slide */
+.slide {
+  width: 1080px;
+  height: 600px;
+  margin: 2% auto;
+  border-radius: 0.5em;
+  box-shadow: 2px 5px 10px #888;
+  position: relative; }
+
+.slide img {
+  width: 1080px;
+  height: 600px;
+  position: absolute; }
+
+.slide .img2 .slide .img3 .slide .img4 {
+  display: none; }
+
+figure {
+  margin: 0; }
+
+/*style etiquetas de productos */
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  section .product-tag {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #008080;
+    text-align: center;
+    padding: 10px;
+    transition: 0.3s;
+    margin: 10px;
+    background-color: white;
+    font-family: Arial; }
+    section .product-tag .img-pt {
+      margin-top: 5px;
+      width: 230px;
+      height: 150px;
+      border-radius: 5px; }
+    section .product-tag .btn-pt {
+      padding: 5px 5px 5px 5px;
+      background-color: #008080;
+      text-decoration: none;
+      color: #FFF;
+      border-radius: 5px;
+      font-family: Arial;
+      width: 70px;
+      margin-left: 80px; }
+    section .product-tag .btn-pt:hover {
+      background-color: #008B8B;
+      transition: 0.3s; }
+
+.product-tag:hover {
+  box-shadow: 1px 1px 10px #008080; }
+
+/*style de footer */
+footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  footer .footer-online {
+    height: 100%;
+    width: 100%;
+    background-color: #34495E;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; }
+    footer .footer-online .footer-info {
+      width: 25%;
+      padding-top: 10px;
+      margin-top: 10px;
+      text-align: justify;
+      font-family: Arial; }
+      footer .footer-online .footer-info h3 {
+        color: #46635D;
+        font-size: 20px;
+        font-family: Arial;
+        padding: 5px; }
+      footer .footer-online .footer-info p {
+        color: #8F9B98; }
+    footer .footer-online .footer-service {
+      width: 25%;
+      padding-top: 10px;
+      margin-top: 10px;
+      text-align: center;
+      font-family: Arial; }
+      footer .footer-online .footer-service h3 {
+        color: #46635D;
+        font-size: 20px;
+        font-family: Arial;
+        padding: 5px; }
+      footer .footer-online .footer-service ul li {
+        list-style: none;
+        padding-bottom: 20px; }
+        footer .footer-online .footer-service ul li a {
+          font-family: Arial;
+          color: #8F9B98;
+          text-decoration: none; }
+        footer .footer-online .footer-service ul li a:hover {
+          color: white;
+          transition: 0.3s; }
+    footer .footer-online .footer-social {
+      width: 25%;
+      padding-top: 10px;
+      margin-top: 10px;
+      text-align: center;
+      font-family: Arial; }
+      footer .footer-online .footer-social h3 {
+        color: #46635D;
+        font-size: 20px;
+        font-family: Arial;
+        padding: 5px; }
+      footer .footer-online .footer-social ul li {
+        list-style: none;
+        padding-bottom: 20px; }
+        footer .footer-online .footer-social ul li a {
+          font-family: Arial;
+          color: #8F9B98;
+          text-decoration: none; }
+        footer .footer-online .footer-social ul li a:hover {
+          color: white;
+          transition: 0.3s; }
+
+/*style de footer-copy */
+.footer-copy {
+  height: 40px;
+  width: 100%;
+  background-color: #17202A;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .footer-copy .copy p {
+    color: #FFF;
+    margin: 10px;
+    font-family: Arial;
+    margin-right: 400px; }
+  .footer-copy .link ul {
+    display: flex;
+    flex-direction: row;
+    margin: 10px; }
+    .footer-copy .link ul li {
+      list-style: none; }
+      .footer-copy .link ul li a {
+        padding: 10px;
+        color: #FFF;
+        text-decoration: none;
+        font-family: Arial; }
+      .footer-copy .link ul li a:hover {
+        color: #CDCDCD; }
+
+/*style product */
+.product-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .product-head h1 {
+    padding: 20px;
+    margin-left: 40px;
+    font-family: Arial;
+    font-size: 40px;
+    color: #17202A; }
+  .product-head .group {
+    margin-right: 40px;
+    padding: 20px; }
+    .product-head .group .search {
+      height: 16px;
+      font-size: 14px;
+      padding: 5px; }
+    .product-head .group a {
+      margin: 5px 5px 5px 5px;
+      padding: 5px 5px 5px 5px;
+      border-radius: 5px;
+      background-color: #008080; }
+    .product-head .group a:hover {
+      background-color: #008B8B; }
+
+/*estilo nosotros */
+.info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .info .info-cuadrotexto {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-bottom: 25px;
+    width: 450px;
+    margin: 50px 20px 0px 0px;
+    border: 3px solid #008080;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #008080;
+    background-color: white;
+    text-align: justify; }
+    .info .info-cuadrotexto h1 {
+      font-family: Arial;
+      text-align: center; }
+    .info .info-cuadrotexto p {
+      font-family: Arial; }
+    .info .info-cuadrotexto .img-nosotros {
+      width: 97%;
+      height: 75%;
+      border-radius: 5px;
+      margin: 8px;
+      text-align: center; }
+
+/* Inicia Contactanos */
+.contacto1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .contacto1 .info-contacto1 {
+    padding: 10px;
+    padding-bottom: 25px;
+    width: 45%;
+    margin: 50px 20px 0px 0px;
+    border: 3px solid #008080;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #008080;
+    background-color: white;
+    text-align: justify; }
+    .contacto1 .info-contacto1 form h1 {
+      font-family: Arial;
+      text-align: center; }
+    .contacto1 .info-contacto1 form .formulario {
+      display: flex;
+      flex-direction: column; }
+      .contacto1 .info-contacto1 form .formulario label {
+        padding-top: 10px;
+        font-family: Arial;
+        list-style: none; }
+    .contacto1 .info-contacto1 form input .btn-enviar {
+      margin-top: 5px;
+      padding: 5px 5px 5px 5px;
+      font-size: 14px;
+      font-family: Arial;
+      background-color: #17202A;
+      color: white;
+      width: 100px;
+      border-radius: 5px; }
+    .contacto1 .info-contacto1 form input .btn-enviar:hover {
+      background-color: #D6DBDF; }
+    .contacto1 .info-contacto1 h1 {
+      font-family: Arial;
+      text-align: center; }
+    .contacto1 .info-contacto1 ul li {
+      list-style: none;
+      text-align: justify;
+      font-family: Arial;
+      margin-top: 25px; }
+
+/*acaba contactanos */
+/* style login */
+.login-body {
+  height: 350px;
+  width: 300px;
+  border-radius: 5px;
+  margin-top: 12%;
+  margin-left: 37%;
+  box-shadow: 2px 2px 5px #000000;
+  display: flex; }
+  .login-body form .login-head {
+    height: 70px;
+    width: 100%;
+    background-color: #17202A;
+    border-radius: 5px; }
+    .login-body form .login-head h3 {
+      color: #FFFFFF;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 25px; }
+  .login-body form .login-main {
+    margin: 25px;
+    width: 10%;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-left: 25px; }
+    .login-body form .login-main input {
+      height: 25px;
+      margin: 8px;
+      width: 235px; }
+  .login-body form .login-footer a {
+    margin: 25px;
+    text-decoration: none; }
+    .login-body form .login-footer a a:nth-child(1) {
+      font-size: 16px;
+      font-family: sans-serif;
+      text-decoration: none;
+      color: #000;
+      background-color: #CDCDCD;
+      padding: 5px; }
+    .login-body form .login-footer a a:nth-child(2) {
+      font-size: 16px;
+      font-family: sans-serif;
+      text-decoration: none;
+      color: #000;
+      background-color: #CDCDCD;
+      padding: 5px; }
+
+/*responsive */
+@media screen and (max-width: 640px) {
+  header .nav {
+    width: 100%; }
+  header #menu {
+    height: auto;
+    position: absolute;
+    background-color: #34495E;
+    z-index: 3; }
+    header #menu ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column; }
+      header #menu ul li {
+        margin-top: 0px;
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: bold;
+        border-bottom: 1px solid #17202A;
+        text-align: center;
+        padding: 20px; }
+        header #menu ul li a {
+          text-decoration: none;
+          color: #FFFFFF;
+          padding: 20px; }
+      header #menu ul li:hover {
+        color: #AEB6BF;
+        background-color: #17202A;
+        transition: 0.3s; }
+        header #menu ul li:hover i {
+          padding-right: 5px; }
+
+  header nav .menu-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+    background-color: #34495E;
+    width: 100vw; }
+    header nav .menu-bar .icon {
+      width: 20vw;
+      text-align: center;
+      display: flex;
+      justify-content: center; }
+      header nav .menu-bar .icon i {
+        padding: 5px;
+        font-size: 40px;
+        color: white; }
+    header nav .menu-bar .bt-menu {
+      width: 80vw;
+      display: block;
+      padding: 20px;
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: bold;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      /*footer */ }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    footer .footer-online {
+      height: 100%;
+      width: 100%;
+      background-color: #34495E;
+      margin-top: 10px;
+      padding-top: 10px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center; }
+      footer .footer-online .footer-info {
+        width: 90%;
+        padding-top: 10px;
+        margin-top: 10px;
+        font-family: Arial;
+        text-align: justify; }
+        footer .footer-online .footer-info h3 {
+          color: #46635D;
+          font-size: 20px;
+          font-family: Arial;
+          padding: 5px; }
+        footer .footer-online .footer-info p {
+          color: #8F9B98; }
+      footer .footer-online .footer-service {
+        width: 100%;
+        padding-top: 10px;
+        margin-top: 10px;
+        text-align: center;
+        font-family: Arial; }
+        footer .footer-online .footer-service h3 {
+          color: #46635D;
+          font-size: 20px;
+          font-family: Arial;
+          padding: 5px; }
+        footer .footer-online .footer-service ul li {
+          list-style: none;
+          padding-bottom: 20px; }
+          footer .footer-online .footer-service ul li a {
+            font-family: Arial;
+            color: #8F9B98;
+            text-decoration: none; }
+          footer .footer-online .footer-service ul li a:hover {
+            color: white;
+            transition: 0.3s; }
+      footer .footer-online .footer-social {
+        width: 100%;
+        padding-top: 10px;
+        margin-top: 10px;
+        text-align: center;
+        font-family: Arial; }
+        footer .footer-online .footer-social h3 {
+          color: #46635D;
+          font-size: 20px;
+          font-family: Arial;
+          padding: 5px; }
+        footer .footer-online .footer-social ul li {
+          list-style: none;
+          padding-bottom: 20px; }
+          footer .footer-online .footer-social ul li a {
+            font-family: Arial;
+            color: #8F9B98;
+            text-decoration: none; }
+          footer .footer-online .footer-social ul li a:hover {
+            color: white;
+            transition: 0.3s; }
+
+  /*style de footer-copy */
+  .footer-copy {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .footer-copy .copy p {
+      margin: 10px;
+      font-family: Arial; }
+    .footer-copy .link ul {
+      display: flex;
+      flex-direction: row;
+      margin: 10px; }
+      .footer-copy .link ul li {
+        list-style: none; }
+        .footer-copy .link ul li a {
+          padding: 10px; }
+        .footer-copy .link ul li a:hover {
+          color: #CDCDCD; } }
+/*Nosotros-pendiente */
+/*slider*/
+ * .slide
+ *   width: 100%
+ *   height: 600px
+ *   margin: 2% auto
+ *   border-radius: .5em
+ *   box-shadow: 2px 5px 10px #888
+ *   position: relative
+ *
+ * .slide
+ *   img
+ *     width: 100%
+ *     height: 600px
+ *     position: absolute
+ *
+ * .slide
+ *   .img2
+ *     .slide
+ *       .img3
+ *         .slide
+ *           .img4
+ *             display: none */
+
+/*# sourceMappingURL=style.css.map */

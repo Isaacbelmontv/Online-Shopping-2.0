@@ -4,7 +4,6 @@
 Diagrama de Navegacion
 
 
-![Diagrama Navegacion](imagenes/diagrama.jpeg)
 
 
 Paleta de colores
@@ -17,8 +16,6 @@ Paleta de colores
 
 Pantalla de inicio
 
-
-![Diagrama Navegacion](imagenes/home.jpeg)
 
 
 El usuario podra registrarse para poder realizar la compra de algun producto y llevar el control de cuantos productos esta comprando.
@@ -45,15 +42,12 @@ En la seccion de abajo se veran los productos al dar click se visualizaran todos
 En la parte de abajo se cuentan con las redes sociales y el mensaje de Copyright.
 
 - Pantalla productos
-![Pantalla de productos](imagenes/producto.jpeg)
 
 
 En esta seccion se podran visualizar todos los productos.
 
 
 - Pantalla de Nosotros
-
-![Diagrama Navegacion](imagenes/nosotros.jpeg)
 
 
 Se visualizara la mision y la vision de la empresa
@@ -62,7 +56,6 @@ Se visualizara la mision y la vision de la empresa
 - Pantalla de Contactanos
 
 
-![Diagrama Navegacion](imagenes/ubicacion.jpeg)
 
 
 Se mostrala la ubicacion de la empresa y el contacto.
