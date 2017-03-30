@@ -2,6 +2,7 @@
 $bodycolor: #D6DBDF
 $navlogin: #17202A
 $navmenu: #34495E
+$break-small: 640px
 
 *
   margin: 0px
@@ -14,12 +15,18 @@ body
 header
   nav
     .menu-bar
-      a
       display: none
+  @media screen and (min-width:641)
+  nav
+    .menu-bar
+      a
+        display: none
+
 /*Nav Login*/
 header
   width: 100%
   .nav
+    width: 100%
     height: 40px
     background-color: $navlogin
     ul
@@ -42,8 +49,10 @@ header
 /*Nav Menu*/
 header
   #menu
+    width: 100%
     height: 58px
     background-color: $navmenu
+    position: relative
     ul
       list-style: none
       display: flex
@@ -66,7 +75,7 @@ header
       a:hover
         color: #AEB6BF
         background-color: $navlogin
-        transition: 0.5s
+        transition: 0.3s
 /*Inicio de slide*/
 .slide
   width: 1080px
@@ -269,10 +278,12 @@ footer
   flex-wrap: wrap
   justify-content: center
   .info-cuadrotexto
+    display: flex
+    flex-direction: column
     padding: 10px
     padding-bottom: 25px
-    width: 40%
-    margin: 50px
+    width: 450px
+    margin: 50px 20px 0px 0px
     border: 3px solid #008080
     border-radius: 5px
     box-shadow: 1px 1px 10px #008080
@@ -316,7 +327,7 @@ footer
           padding-top: 10px
           font-family: Arial
           list-style: none
-        input
+      input
         .btn-enviar
           margin-top: 5px
           padding: 5px 5px 5px 5px
@@ -385,3 +396,185 @@ footer
         color: #000
         background-color: #CDCDCD
         padding: 5px
+
+/*responsive*/
+@media screen and (max-width: $break-small)
+  header
+    .nav
+      width: 100%
+    #menu
+      height: auto
+      position: absolute
+      background-color: $navmenu
+      z-index: 3
+      ul
+        list-style: none
+        display: flex
+        flex-direction: column
+        li
+          margin-top: 0px
+          font-family: Arial
+          font-size: 16px
+          font-weight: bold
+          border-bottom: 1px solid #17202A
+          text-align: center
+          padding: 20px
+          a
+            text-decoration: none
+            color: #FFFFFF
+            padding: 20px
+        li:hover
+          color: #AEB6BF
+          background-color: $navlogin
+          transition: 0.3s
+          i
+            padding-right: 5px
+  header
+    nav
+      .menu-bar
+        display: flex
+        flex-direction: row
+        align-items: center
+        vertical-align: middle
+        background-color: #34495E
+        width: 100vw
+        .icon
+          width: 20vw
+          text-align: center
+          display: flex
+          justify-content: center
+          i
+            padding: 5px
+            font-size: 40px
+            color: white
+        .bt-menu
+          width: 80vw
+          display: block
+          padding: 20px
+          color: #FFFFFF
+          text-decoration: none
+          font-size: 25px
+          font-weight: bold
+          -webkit-box-sizing: border-box
+          -moz-box-sizing: border-box
+          box-sizing: border-box
+          /*footer*/
+  footer
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    .footer-online
+      height: 100%
+      width: 100%
+      background-color: #34495E
+      margin-top: 10px
+      padding-top: 10px
+      text-align: center
+      display: flex
+      flex-direction: column
+      justify-content: center
+      flex-wrap: wrap
+      align-items: center
+      .footer-info
+        width: 90%
+        padding-top: 10px
+        margin-top: 10px
+        font-family: Arial
+        text-align: justify
+        h3
+          color: #46635D
+          font-size: 20px
+          font-family: Arial
+          padding: 5px
+        p
+          color: #8F9B98
+      .footer-service
+        width: 100%
+        padding-top: 10px
+        margin-top: 10px
+        text-align: center
+        font-family: Arial
+        h3
+          color: #46635D
+          font-size: 20px
+          font-family: Arial
+          padding: 5px
+        ul
+          li
+            list-style: none
+            padding-bottom: 20px
+            a
+              font-family: Arial
+              color: #8F9B98
+              text-decoration: none
+            a:hover
+              color: white
+              transition: .3s
+      .footer-social
+        width: 100%
+        padding-top: 10px
+        margin-top: 10px
+        text-align: center
+        font-family: Arial
+        h3
+          color: #46635D
+          font-size: 20px
+          font-family: Arial
+          padding: 5px
+        ul
+          li
+            list-style: none
+            padding-bottom: 20px
+            a
+              font-family: Arial
+              color: #8F9B98
+              text-decoration: none
+            a:hover
+              color: white
+              transition: .3s
+  /*style de footer-copy*/
+
+  .footer-copy
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    .copy
+      p
+        margin: 10px
+        font-family: Arial
+    .link
+      ul
+        display: flex
+        flex-direction: row
+        margin: 10px
+        li
+          list-style: none
+          a
+            padding: 10px
+          a:hover
+            color: #CDCDCD
+/*Nosotros-pendiente*/
+/*slider*/
+  .slide
+    width: 100%
+    height: 600px
+    margin: 2% auto
+    border-radius: .5em
+    box-shadow: 2px 5px 10px #888
+    position: relative
+
+  .slide
+    img
+      width: 100%
+      height: 600px
+      position: absolute
+
+  .slide
+    .img2
+      .slide
+        .img3
+          .slide
+            .img4
+              display: none
