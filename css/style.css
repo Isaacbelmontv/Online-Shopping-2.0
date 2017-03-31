@@ -66,15 +66,16 @@ header #menu {
 
 /*Inicio de slide */
 .slide {
-  width: 1080px;
+  width: 80%;
   height: 600px;
   margin: 2% auto;
   border-radius: 0.5em;
   box-shadow: 2px 5px 10px #888;
-  position: relative; }
+  position: relative;
+  align-items: center; }
 
 .slide img {
-  width: 1080px;
+  width: 100%;
   height: 600px;
   position: absolute; }
 
@@ -127,7 +128,8 @@ section {
 footer {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  height: 100%; }
   footer .footer-online {
     height: 100%;
     width: 100%;
@@ -251,17 +253,16 @@ footer {
 
 /*estilo nosotros */
 .info {
+  width: 100%;
   display: flex;
   flex-direction: row;
+  margin: 10px 10px 10px 10px;
   flex-wrap: wrap;
   justify-content: center; }
   .info .info-cuadrotexto {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    padding-bottom: 25px;
-    width: 450px;
-    margin: 50px 20px 0px 0px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    width: 45vw;
     border: 3px solid #008080;
     border-radius: 5px;
     box-shadow: 1px 1px 10px #008080;
@@ -273,57 +274,63 @@ footer {
     .info .info-cuadrotexto p {
       font-family: Arial; }
     .info .info-cuadrotexto .img-nosotros {
-      width: 97%;
-      height: 75%;
+      width: 90%;
       border-radius: 5px;
       margin: 8px;
       text-align: center; }
+  @media screen and (max-width: 801px) and (min-width: 320px) {
+    .info .info-cuadrotexto {
+      width: 90%; } }
 
 /* Inicia Contactanos */
 .contacto1 {
+  width: 100%;
   display: flex;
   flex-direction: row;
+  margin: 10px 10px 10px 10px;
   flex-wrap: wrap;
   justify-content: center; }
   .contacto1 .info-contacto1 {
-    padding: 10px;
-    padding-bottom: 25px;
-    width: 45%;
-    margin: 50px 20px 0px 0px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    width: 45vw;
     border: 3px solid #008080;
     border-radius: 5px;
     box-shadow: 1px 1px 10px #008080;
     background-color: white;
     text-align: justify; }
-    .contacto1 .info-contacto1 form h1 {
+  @media screen and (max-width: 801px) and (min-width: 320px) {
+    .contacto1 .info-contacto1 {
+      width: 90%; } }
+  .contacto1 form h1 {
+    font-family: Arial;
+    text-align: center; }
+  .contacto1 form .formulario {
+    display: flex;
+    flex-direction: column; }
+    .contacto1 form .formulario label {
+      padding-top: 10px;
       font-family: Arial;
-      text-align: center; }
-    .contacto1 .info-contacto1 form .formulario {
-      display: flex;
-      flex-direction: column; }
-      .contacto1 .info-contacto1 form .formulario label {
-        padding-top: 10px;
-        font-family: Arial;
-        list-style: none; }
-    .contacto1 .info-contacto1 form input .btn-enviar {
-      margin-top: 5px;
-      padding: 5px 5px 5px 5px;
-      font-size: 14px;
-      font-family: Arial;
-      background-color: #17202A;
-      color: white;
-      width: 100px;
-      border-radius: 5px; }
-    .contacto1 .info-contacto1 form input .btn-enviar:hover {
-      background-color: #D6DBDF; }
-    .contacto1 .info-contacto1 h1 {
-      font-family: Arial;
-      text-align: center; }
-    .contacto1 .info-contacto1 ul li {
-      list-style: none;
-      text-align: justify;
-      font-family: Arial;
-      margin-top: 25px; }
+      list-style: none; }
+  .contacto1 form .btn-enviar {
+    margin-top: 5px;
+    padding: 5px 5px 5px 5px;
+    font-size: 14px;
+    font-family: Arial;
+    background-color: #17202A;
+    color: white;
+    width: 100px;
+    border-radius: 5px; }
+  .contacto1 form .btn-enviar:hover {
+    background-color: #D6DBDF; }
+  .contacto1 h1 {
+    font-family: Arial;
+    text-align: center; }
+  .contacto1 ul li {
+    list-style: none;
+    text-align: justify;
+    font-family: Arial;
+    margin-top: 25px; }
 
 /*acaba contactanos */
 /* style login */
@@ -331,10 +338,12 @@ footer {
   height: 350px;
   width: 300px;
   border-radius: 5px;
-  margin-top: 12%;
-  margin-left: 37%;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
   box-shadow: 2px 2px 5px #000000;
-  display: flex; }
+  align-content: center;
+  align-items: center; }
   .login-body form .login-head {
     height: 70px;
     width: 100%;
@@ -355,26 +364,33 @@ footer {
       height: 25px;
       margin: 8px;
       width: 235px; }
-  .login-body form .login-footer a {
+  .login-body form .login-footer {
     margin: 25px;
     text-decoration: none; }
-    .login-body form .login-footer a a:nth-child(1) {
+    .login-body form .login-footer a:nth-child(1) {
       font-size: 16px;
       font-family: sans-serif;
       text-decoration: none;
       color: #000;
       background-color: #CDCDCD;
       padding: 5px; }
-    .login-body form .login-footer a a:nth-child(2) {
+    .login-body form .login-footer a {
+      text-decoration: none;
+      color: black; }
+    .login-body form .login-footer a:nth-child(2) {
       font-size: 16px;
       font-family: sans-serif;
       text-decoration: none;
       color: #000;
       background-color: #CDCDCD;
       padding: 5px; }
+    .login-body form .login-footer a:hover {
+      background-color: black;
+      color: white;
+      transition: 0.3s; }
 
 /*responsive */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
   header .nav {
     width: 100%; }
   header #menu {
@@ -526,7 +542,6 @@ footer {
           padding: 10px; }
         .footer-copy .link ul li a:hover {
           color: #CDCDCD; } }
-/*Nosotros-pendiente */
 /*slider*/
  * .slide
  *   width: 100%
